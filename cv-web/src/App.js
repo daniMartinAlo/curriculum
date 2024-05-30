@@ -46,7 +46,7 @@ function App() {
       </nav>
       <div className="container-fluid">
         <div className="row">
-          <main className="col-md-9 ml-sm-auto col-lg-10 px-4">
+          <main className="px-4">
             <Element name="home">
               <Home />
             </Element>

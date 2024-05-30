@@ -1,110 +1,49 @@
-import React from "react";
-import { Link as ScrollLink, Element } from "react-scroll";
-import Home from "./components/Home";
-import Exp from "./components/Exp";
-import Education from "./components/Education";
-import Skills from "./components/Skills";
-import "./App.css";
+import React from 'react';
+import { Link as ScrollLink, Element } from 'react-scroll';
+import Home from './components/Home';
+import Exp from './components/Exp';
+import Education from './components/Education';
+import Skills from './components/Skills';
+import profilePhoto from './assets/img/profilePhoto.jpg';
+import './App.css';
 
 function App() {
   return (
     <div className="App d-flex">
-      <div className="d-flex flex-column bg-dark sidebar text-white">
-        <div className="profile text-center p-3">
-          <img
-            src="assets/img/profile-img.jpg"
-            alt=""
-            className="img-fluid rounded-circle mb-3"
-          />
-          <h1 className="text-light">
-            <a href="index.html" className="text-decoration-none text-white">
-              Alex Smith
-            </a>
-          </h1>
-          <div className="social-links mt-3">
-            <a href="#" className="twitter">
-              <i className="bx bxl-twitter"></i>
-            </a>
-            <a href="#" className="facebook">
-              <i className="bx bxl-facebook"></i>
-            </a>
-            <a href="#" className="instagram">
-              <i className="bx bxl-instagram"></i>
-            </a>
-            <a href="#" className="google-plus">
-              <i className="bx bxl-skype"></i>
-            </a>
-            <a href="#" className="linkedin">
-              <i className="bx bxl-linkedin"></i>
-            </a>
+      <nav className="d-none d-md-block bg-dark sidebar">
+        <div className="sidebar-sticky">
+          <div className="profile text-center p-1">
+            <img src={profilePhoto} alt="" className="img-fluid rounded-circle mb-2 profile-img" />
+            <h1 className="text-light p-1">Daniel Martin</h1>
+            <div className="social-links mt-1">
+              <a href="#" className="social-icon"><i className="bx bxl-github"></i></a>
+              <a href="https://www.linkedin.com/in/daniel-martin-alonso-408076226" target="_blank" className="social-icon"><i className="bx bxl-linkedin"></i></a>
+            </div>
           </div>
-        </div>
-
-        <nav id="navbar" className="nav-menu navbar">
           <ul className="nav flex-column">
             <li className="nav-item">
-              <ScrollLink
-                className="nav-link scrollto text-white"
-                to="hero"
-                smooth={true}
-                duration={500}
-              >
-                <i className="bx bx-home"></i> <span>Home</span>
+              <ScrollLink className="nav-link" to="home" smooth={true} duration={500}>
+              <i class="bx bx-user"></i> Sobre mi
               </ScrollLink>
             </li>
             <li className="nav-item">
-              <ScrollLink
-                className="nav-link scrollto text-white"
-                to="about"
-                smooth={true}
-                duration={500}
-              >
-                <i className="bx bx-user"></i> <span>About</span>
+              <ScrollLink className="nav-link" to="Exp" smooth={true} duration={500}>
+              <i className="bx bx-briefcase"></i> Experiencia laboral
               </ScrollLink>
             </li>
             <li className="nav-item">
-              <ScrollLink
-                className="nav-link scrollto text-white"
-                to="resume"
-                smooth={true}
-                duration={500}
-              >
-                <i className="bx bx-file-blank"></i> <span>Resume</span>
+              <ScrollLink className="nav-link" to="educacion" smooth={true} duration={500}>
+              <i className="bx bx-file-blank"></i> Educación
               </ScrollLink>
             </li>
             <li className="nav-item">
-              <ScrollLink
-                className="nav-link scrollto text-white"
-                to="portfolio"
-                smooth={true}
-                duration={500}
-              >
-                <i className="bx bx-book-content"></i> <span>Portfolio</span>
-              </ScrollLink>
-            </li>
-            <li className="nav-item">
-              <ScrollLink
-                className="nav-link scrollto text-white"
-                to="services"
-                smooth={true}
-                duration={500}
-              >
-                <i className="bx bx-server"></i> <span>Services</span>
-              </ScrollLink>
-            </li>
-            <li className="nav-item">
-              <ScrollLink
-                className="nav-link scrollto text-white"
-                to="contact"
-                smooth={true}
-                duration={500}
-              >
-                <i className="bx bx-envelope"></i> <span>Contact</span>
+              <ScrollLink className="nav-link" to="skills" smooth={true} duration={500}>
+              <i className="bx bx-book-content"></i> Habilidades
               </ScrollLink>
             </li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
       <div className="container-fluid">
         <div className="row">
           <main className="col-md-9 ml-sm-auto col-lg-10 px-4">

@@ -18,10 +18,11 @@ body {
 
 .sidebar .nav-link:hover {
   color: #007bff;
+  cursor: pointer;
 }
 
 .container-fluid {
-  padding-left: 260px; /* Deja espacio para la barra lateral */
+  padding-left: 260px;
 }
 
 .my-5 {
@@ -33,17 +34,54 @@ main {
   padding: 20px;
 }
 
-/* Responsive Styles */
+.profile {
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-decoration: none;
+  background-color: #586973;
+  transition: background-color 0.3s ease;
+}
+
+.social-icon i {
+  font-size: 24px;
+  color: #fff;
+}
+
+.social-icon:hover {
+  background-color: #0077b5; 
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+}
+
+
 @media (max-width: 768px) {
   .sidebar {
-    display: none; /* Oculta la barra lateral en pantallas pequeñas */
+    display: none;
   }
 
   .container-fluid {
-    padding-left: 0; /* Elimina el espacio para la barra lateral */
+    padding-left: 0;
   }
 
   main {
-    padding: 10px; /* Reduce el padding para pantallas pequeñas */
+    padding: 10px;
   }
 }

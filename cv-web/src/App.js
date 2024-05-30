@@ -16,8 +16,8 @@ function App() {
             <img src={profilePhoto} alt="" className="img-fluid rounded-circle mb-2 profile-img" />
             <h1 className="text-light p-1">Daniel Martin</h1>
             <div className="social-links mt-1">
-              <a href="#" className="social-icon"><i className="bx bxl-github"></i></a>
-              <a href="https://www.linkedin.com/in/daniel-martin-alonso-408076226" target="_blank" className="social-icon"><i className="bx bxl-linkedin"></i></a>
+              <a href="https://github.com/daniMartinAlo" className="social-icon"><i className="bx bxl-github"></i></a>
+              <a href="https://www.linkedin.com/in/daniel-martin-alonso-408076226" target="_blank" rel="noreferrer" className="social-icon"><i className="bx bxl-linkedin"></i></a>
             </div>
           </div>
           <ul className="nav flex-column">
